@@ -1,0 +1,92 @@
+body{
+    background-color: #E5E5E5;
+    margin: 0;
+}
+.title{
+    font-size: 40px;
+    padding: 10px;
+}
+.subtitle{
+    font-size: 12px;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.pictures {
+    width:100%;
+    height: calc(100% - 30px - 102px - 26px - 15px - 18px - 30px);
+    display: flex;
+}
+.section {
+    width: 50%;
+    height: 100%;
+}
+.big-picture {
+    width: 100%;
+    height: 55%;
+    background-image: url('https://actionphototours.com/wp-content/uploads/2018/04/Sunburst.jpg');
+    background-size: cover;
+    background-position: center;
+}
+   
+.big-picture[bp="1"] {
+    background-image: url('https://actionphototours.com/wp-content/uploads/2018/04/Sunburst.jpg');
+}
+   
+.big-picture[bp="2"] {
+    background-image: url('https://actionphototours.com/wp-content/uploads/2018/04/Sunburst.jpg');
+}
+   
+.sub-section {
+    width:100%;
+    height: 45%;
+    display: flex;
+}
+.small-picture {
+    width:50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#sp-1 {
+    background-image: url('https://actionphototours.com/wp-content/uploads/2018/04/Sunburst.jpg');
+}
+   
+#sp-2 {
+    background-image: url('https://actionphototours.com/wp-content/uploads/2018/04/Sunburst.jpg');
+}
+   
+.text {
+    width:50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+}
+   
+.text[orange] {
+    background-color: #f08003;
+    color: white;
+}
+.number[orange],
+.text[orange]> .number {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+   
+.number[orange] {
+    color: #f08003;
+}
+    
+   

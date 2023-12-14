@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    background-color: whitesmoke;
+}
+.content{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.container-1{
+    display: flex;
+    column-gap: 20px;
+    justify-content:flex-end;
+}
+.container-2{
+    display: flex;
+    column-gap: 20px;
+}
+
+.picture{
+    height: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.container-1 .picture{
+    display: flex;
+    justify-content: center;
+}
+
+.section{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(186, 184, 184);
+    width: calc(50% - 140px );
+    height: 200px;
+    position: relative;
+}
+.title, .title-2{
+    font-weight: bold;
+    font-family: 'online', sans-serif;
+}
+.title{
+    padding-left: 20px;
+}
+.title-2{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.description, .description-2 {
+    width: 300px;
+    color: rgb(100, 96, 96);
+}
+.description{
+    padding-left: 20px;
+}
+.description-2 {
+    text-align: right;
+}
+
+.button, .button-2{
+    position: absolute;
+    bottom: 25px;
+    padding: 10px;
+    background-color: green;
+    border-radius: 20px;
+    width: 94px;
+}
+.button{
+    position: absolute;
+    left: 25px;
+}
+.button-2{
+    position: absolute;
+    right: 25px;
+}

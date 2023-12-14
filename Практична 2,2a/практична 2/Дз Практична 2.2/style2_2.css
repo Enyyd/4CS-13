@@ -1,0 +1,99 @@
+body{
+    margin: 0%;
+}
+.background {
+    background-image: url('https://th.bing.com/th/id/R.244d9033ce5a685bd3610c9a17db5dcc?rik=NoRi9uZCWO9b%2fA&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin: auto;
+    color: #F19A0E;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'online', sans-serif;
+    padding-top: 30px;
+}
+
+.line{
+    font-size: 24px;
+    color: #F19A0E;
+    font-family: 'online', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: #F19A0E; 
+    text-decoration-thickness: 5px;
+    text-align: center;
+}
+
+.subtitle{
+    padding-top: 20px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'online', sans-serif;
+    font-size: 18px;
+}
+.subtitle_2 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'online', sans-serif;
+    font-size: 18px;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    max-width: 70px;
+    display: block; /* Робимо зображення блоковим елементом для центрування */
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.content{
+    background-color: whitesmoke;
+    padding: 10px 50px 50px 50px; 
+    /* display: flex;
+    justify-content: center; 
+    max-width: 800px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 800px;
+}
+.text{
+    text-align: center;
+    font-family: 'online', sans-serif;
+    color: gray;
+}
+.section{
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+.container2 .text{
+    color: whitesmoke;
+    background-color: rgb(87, 92, 72);
+    font-size: 12px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-family: 'online', sans-serif;
+}
+.container2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+

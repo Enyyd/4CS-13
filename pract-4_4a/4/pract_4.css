@@ -1,0 +1,546 @@
+:root {
+    --main-yellow: #e8b846;
+    --main-white: #d9d9d9;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .section:nth-child(1) {
+    width: 100%;
+    height: 80vh;
+    min-height: 700px;
+    background-image: url('./images/jhj-min.jpg');
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 40px;
+  
+    > div {
+      width: 60%;
+      height: 80%;
+      margin: auto;
+      color: whitesmoke;
+  
+      display: flex;
+      justify-content: end;
+  
+      .title,
+      .description {
+        padding-top: 35px;
+      }
+  
+      .title {
+        width: 40%;
+        height: 100%;
+        font-size: 2.5em;
+        font-weight: bolder;
+        border-right: 10px solid var(--main-yellow);
+      }
+  
+      .description {
+        width: 40%;
+        height: 100%;
+        font-size: 1.25em;
+        margin-left: 20px;
+  
+        > div:last-child {
+          background-color: var(--main-yellow);
+          color: black;
+          border-radius: 10px;
+          padding: 20px 10px;
+          width: 50%;
+          text-align: center;
+          font-size: 1em;
+          font-weight: bolder;
+          text-transform: uppercase;
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+  
+  .section:nth-child(2) {
+    width: 100%;
+    height: 250px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+  
+    > .item {
+      width: 20%;
+      height: 100%;
+      margin: 0 5px;
+      border-radius: 5px;
+      background-color: whitesmoke;
+      position: relative;
+      top: -40px;
+      padding: 10px;
+      box-shadow: 0px 0px 75px -18px rgba(0, 0, 0, 1);
+  
+      > div:first-child {
+        margin: auto;
+        width: 40%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: var(--main-yellow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -40px;
+  
+        > img {
+          width: 45%;
+        }
+      }
+  
+      > div:nth-child(2) {
+        width: 100%;
+        font-size: 1.25em;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+  
+      > div:last-child {
+        width: 100%;
+        text-align: center;
+        color: rgba(82, 82, 82, 0.655);
+      }
+    }
+  }
+  
+  .section3 {
+    width: 100%;
+    height: 110vh;
+    background-color: #e8b846;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .images{
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .images > img.picture {
+    width: 70%;
+    height: auto;
+    margin: 0;
+    z-index: 1;
+    margin-right: 14%;
+  }
+  .bg-circle1, .bg-circle2 {
+    width: 150px;
+    height: 150px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    z-index: 0;
+    
+  }
+  .images > .bg-circle1{
+    position: absolute;
+    top: 130px;
+    right: 125px;
+  }
+  .images > .bg-circle2{
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    /*доробити стиль паралельних ліній*/
+  }
+  .section3 > .chapter{
+    display: grid;
+    width: calc(24% - 10px);
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 350px;
+    background-color: white;
+    z-index: 2;
+    gap: 20px;
+    padding: 25px;
+    box-shadow: 0px 0px 75px -18px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  .chapter > .title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .chapter > .text, .freepic{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+    line-height: 25px;
+  }
+  .chapter > .button{
+    padding: 10px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 160px;
+    background-color: #e8b846;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #d9d9d9;
+    z-index: -1;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .section4 > .title{
+    padding-top: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .item1 {
+    margin-top: 30px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .item1 > .chapter {
+    width: auto;
+    background-color: white;
+    z-index: 2;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    box-shadow: 0px 0px 75px -18px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+  }
+  .chapter > .marker{
+    width: 8%;
+    height: 50%;
+    background-color: #e8b846;
+    margin-right: 40px;
+  }
+  .chapter > .text {
+    width: 84%;
+    line-height: 25px;
+  }
+
+  .section5{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 160vh;
+    background-color: #d9d9d9;
+    z-index: -1;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .gallary1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    position: relative;
+  }
+  .gallary1 > .chapter{
+    display: grid;
+    width: 55%;
+    height: auto;
+    background-color: white;
+    z-index: 2;
+    gap: 20px;
+    padding: 25px;
+    box-shadow: 0px 0px 75px -18px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .gallary1 > .description{
+    color: gray;
+    width: 40%;
+    height: 200px;
+    font-weight: bolder;
+    padding: 10px;
+    border-left: 10px solid rgb(90, 90, 90);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  .gallary1 > .pic1, .gallary1 > .pic2, .gallary1 > .pic3, .gallary1 > .pic4{
+    position: absolute;
+    z-index: 0;
+    background-size: cover;
+    box-shadow: 0px 0px 75px -18px rgba(0, 0, 0, 1);
+  }
+  .gallary1 > .pic1{
+    width: 300px;
+    height: 350px;
+    background-image: url(../4/images/fgfg.jpg);
+    top: 180px;
+    left: 0px;
+  }
+  .gallary1 > .pic2{
+    width: 500px;
+    height: 350px;
+    background-image: url(../4/images/bnnn.jpg);
+    top: 300px;
+    right: 0px;
+  }
+  .gallary1 > .pic3{
+    width: 300px;
+    height: 300px;
+    background-image: url(../4/images/305d8a9c-d477-44c2-a0db-9a5268a4fb99.jpg);
+    bottom: 230px;
+    left: 200px;
+  }
+  .gallary1 > .pic4{
+    width: 250px;
+    height: 300px;
+    background-image: url(../4/images/25fbaa49-cb8b-4a6a-bc41-29b4b053fd75.jpeg);
+    bottom: 50px;
+    right: 0px;
+  }
+
+  .section6{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #e8b846;
+    z-index: -1;
+    padding-bottom: 50px;
+  }
+  .item2{
+    width: 60%;
+    position: relative;
+  }
+  /* .item2 > .chapter має спільні характеристики з .item1 > .chapter */
+  .item2 > .chapter {
+    position: absolute;
+    right: 50px;
+    top: 25%;
+    width: 40%;
+    background-color: white;
+    z-index: 2;
+    padding: 20px;
+    box-shadow: 0px 0px 75px -18px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item2 > .bg-picture{
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+    width: 45%;
+    height: 75%;
+    background-position: 0%;
+    background-image: url(../4/images/pillow-with-lemons-yellow-armchair-interior-room_169016-16555.webp);
+    top: 80px;
+    right: 35%;
+  }
+  .item2 > .bg-circle1{
+    position: absolute;
+    right: 0px;
+    top: 15%;
+  }
+  .item2 > .bg-circle2{
+    position: absolute;
+    bottom: 0px;
+    left: 120px;
+  }
+  .item2 > .bg-rectangle{
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    width: 50%;
+    height: 35%;
+    background-color: #d9d9d9;
+    z-index: 0;
+  }
+
+  .section7{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 180vh;
+    background-color: #d9d9d9;
+    z-index: -1;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .gallary2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    position: relative;
+  }
+  .gallary2 > .chapter{
+    display: grid;
+    width: 45%;
+    height: auto;
+    background-color: white;
+    z-index: 2;
+    gap: 20px;
+    padding: 25px;
+    box-shadow: 0px 0px 75px -18px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    margin: 300px 230px 0px 0px;
+  }
+  .gallary > .description{
+    color: gray;
+    width: 40%;
+    height: 200px;
+    font-weight: bolder;
+    padding: 10px;
+    border-left: 10px solid rgb(90, 90, 90);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  .gallary2 > .pic1, .gallary2 > .pic2, .gallary2 > .pic3, .gallary2 > .pic4{
+    position: absolute;
+    z-index: 0;
+    background-size: cover;
+    box-shadow: 0px 0px 75px -18px rgba(0, 0, 0, 1);
+  }
+  .gallary2 > .pic1{
+    width: 50%;
+    height: 300px;
+    background-image: url(../4/images/gfgf.jpg);
+    top: 180px;
+    left: 0px;
+    z-index: 1;
+  }
+  .gallary2 > .pic2{
+    width: 500px;
+    height: 400px;
+    background-image: url(../4/images/gggg.jpg);
+    top: 300px;
+    right: 0px;
+  }
+  .gallary2 > .pic3{
+    width: 48%;
+    height: 300px;
+    background-image: url(../4/images/fggg-min.jpg);
+    bottom: 90px;
+    left: 0px;
+  }
+  .gallary2 > .pic4{
+    width: 35%;
+    height: 35%;
+    background-image: url(../4/images/ffff.jpg);
+    bottom: 50px;
+    right: 0px;
+  }
+
+
+  .section8{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e8b846;
+    z-index: -1;
+  }
+  .item3{
+    width: 60%;
+    position: relative;
+  }
+  .item3 > .tablet{
+    margin-top: 30px;
+    width: 48%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    z-index: 1;
+    margin-top: 125px;
+  }
+  .item3 > .chapter{
+    position: absolute;
+    right: 0px;
+    top: 10%;
+    width: 60%;
+    height: 80%;
+    background-color: white;
+    z-index: 0;
+    box-shadow: 0px 0px 75px -18px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 50px 80px 100px;
+  }
+  .blox{
+    width: auto;
+    background-color: #292D33;
+    z-index: 2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .blox > .picture{
+    width: 100px;
+    height: 100px;
+  }
+  .blox > .text{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+  }
+  .blox > .text1{
+    color: #d9d9d9;
+    text-align: center;
+    font-size: 18px;
+  }
+  .chapter > .title8{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  .chapter > .Name, .chapter > .Email, .chapter > .Massage{
+    width: 100%;
+    background-color: #d9d9d9;
+    border: none;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    gap: 20px;
+  }
+  .chapter > ::placeholder {
+      color: #ababab;
+  }
+  .chapter > .button8{
+    width: 100%;
+    text-align: center;
+    background-color: #e8b846;
+    padding: 10px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
