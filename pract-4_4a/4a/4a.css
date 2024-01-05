@@ -1,0 +1,205 @@
+:root {
+    --main-white: #FFFFFF;
+    --main-pink: #FBECED;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.lable{
+    width: 60%;
+    display: flex;
+    margin-bottom: 50px;
+}
+.text{
+    width: auto;
+    color: black;
+    padding: 20px;
+}
+.bg-picture {
+    content: "";
+    background-image: url('./images/la.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    height: 75%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.bg-picture > .window{
+    width: 50%;
+    margin-left: 20px;
+}
+.window > .title{
+    font-size: 60px;
+}
+.window > .text{
+    padding: 0px;
+}
+.window > .title,.window > .text{
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+.Enter, .Enter > .Email, .Enter > .button, .ins > .Name, .ins > .Email, .ins > .button{
+    border-radius: 15px;
+}
+.Enter{
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+.Enter > .Email, .ins > .Name, .ins > .Email{
+    width: 80%;
+    border: none;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+.Enter > .button, .ins > .button{
+    margin-left: 3px;
+    padding: 5px 20px 5px 20px;
+    color: #FFFFFF;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.section2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FBECED;
+    height: 80vh;
+    justify-content: center;
+}
+.collum{
+    width: 60%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+.about > img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.section3, .section4, .section6{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+.section3 > .title, .section6 > .title, .section7 > .title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.section3 > .title, .section3 > .text, .section6 > .title, .section6 > .text, .section7 > .title, .section7 > .text {
+    width: 60%;
+    text-align: start;
+    margin-top: 20px;
+    padding: 0px;
+}
+.panorama{
+    margin-top: 30px;
+    width: 60%;
+    height: 70%;
+    border-radius: 30px;
+}
+.image-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+.image-row {
+    display: flex;
+    gap: 10px;
+}
+.image-row img {
+    width: 297px;
+    height: 297px;
+}
+
+.section5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.section5 > .info{
+    width: 60%;
+    display: flex;
+    gap: 25px;
+}
+.info > img, .info > .window{
+    border-radius: 20px;
+    width: 49%;
+    height: 500px;
+}
+.info > img{
+    object-fit: cover;
+}
+.info > .window{
+    background-color: #c9adce;
+    display: flex;
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+.ul > .title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.ul > .point{
+    line-height: 30px;
+    padding-left: 20px;
+}
+.ul > .text{
+    padding-left: 0px;
+    margin-top: -20px;
+}
+.ul > .sub-title{
+    margin-top: 10px;
+}
+
+.section7{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    background-color: #FBECED;
+}
+.ins{
+    margin-top: 30px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
